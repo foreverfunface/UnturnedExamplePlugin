@@ -1,4 +1,4 @@
-# UnturnedExamplePlugin
+# Template for creating RocketMod plugins
 
 In template connected all basic Unturned and Unity lib's, if you need external libraries, you can go to the [unturned-libraries](https://github.com/d3adwolf/unturned-libraries) repository. Use this for create your unturned plugin.<br>
 **Dont forget** rename `namespace`, `classes` and change `assembly info`.
