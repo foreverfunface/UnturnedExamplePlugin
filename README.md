@@ -1,9 +1,9 @@
 # UnturnedExamplePlugin
 
-In template connected all basic unturned and unity lib's
-Use this for create your unturned plugin
-**Dont forget** rename `namespace`, `classes` and change `assembly info`!
+In template connected all basic Unturned and Unity lib's, if you need external libraries, you can go to the [unturned-libraries](https://github.com/d3adwolf/unturned-libraries) repository.<br>
+Use this for create your unturned plugin.
+**Dont forget** rename `namespace`, `classes` and change `assembly info`.
 
-Clean [main](https://github.com/AstisCommunity/UnturnedExamplePlugin/tree/main) plugin template tree
-[Plugin template](https://github.com/AstisCommunity/UnturnedExamplePlugin/tree/with-variables) with example var's
-[Plugin template](https://github.com/AstisCommunity/UnturnedExamplePlugin/tree/with-commands) with example var's and command
+- A clean [template](https://github.com/AstisCommunity/UnturnedExamplePlugin/tree/main) tree of the main plugin;<br>
+- [plugin template](https://github.com/AstisCommunity/UnturnedExamplePlugin/tree/with-variables) with example variables;<br>
+- [plugin template](https://github.com/AstisCommunity/UnturnedExamplePlugin/tree/with-commands) with example variables and command.
