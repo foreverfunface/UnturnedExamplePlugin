@@ -1,8 +1,8 @@
 ﻿using Rocket.API;
 
-namespace UnturnedExamplePlugin
+namespace PLUGIN-NAMESPACE
 {
-    public class PluginConfiguration : IRocketPluginConfiguration
+    public class PLUGIN-NAME-XMLConfiguration : IRocketPluginConfiguration
     {
         public void LoadDefaults()
         {

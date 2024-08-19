@@ -1,8 +1,8 @@
 ﻿using Rocket.Core.Plugins;
 
-namespace UnturnedExamplePlugin
+namespace PLUGIN-NAMESPACE
 {
-    public class Plugin : RocketPlugin<PluginConfiguration>
+    public class PLUGIN-NAME-XML : RocketPlugin<PLUGIN-NAME-XMLConfiguration>
     {
         protected override void Load()
         {

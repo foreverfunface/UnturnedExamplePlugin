@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "londev.kz",
+  "classifications": [ "Common", "RocketMod", "Plugin", "Unturned" ],
+  "identity": "UnturnedExamplePlugin",
+  "name": "Unturned Example Plugin",
+  "shortName": "unturnedplugin",
+  "sourceName":"unturnedexampleplugin",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "preferNameDirectory": true,
+  "PrimaryOutputs": [
+    {
+      "path": "PluginTemplate.csproj"
+    }
+  ],
+  "symbols": {
+    "PluginId": {
+      "type": "parameter",
+      "datatype": "string",
+      "description": "Sets the ID of the plugin",
+      "defaultValue": "MyOpenModPlugin",
+      "replaces": "PLUGIN-ID"
+    },
+    "FullPluginName": {
+      "type": "parameter",
+      "datatype": "string",
+      "description": "Sets the display name of the plugin",
+      "defaultValue": "My Unturned Plugin",
+      "replaces": "PLUGIN-NAME"
+    },
+    "FullPluginNameXmlEncoded": {
+      "type": "derived",
+      "replaces": "PLUGIN-NAME-XML",
+      "valueSource": "FullPluginName",
+      "valueTransform": "xmlEncode"
+    },
+    "PluginNamespace": {
+      "type": "parameter",
+      "datatype": "string",
+      "description": "Sets the namespace for the plugin",
+      "defaultValue": "MyUnturnedPlugin",
+      "replaces": "PLUGIN-NAMESPACE"
+    },
+    "PluginNamespaceXmlEncoded": {
+      "type": "derived",
+      "replaces": "PLUGIN-NAMESPACE-XML",
+      "valueSource": "PluginNamespace",
+      "valueTransform": "xmlEncode"
+    },
+    "SkipRestore": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "Skips the execution of 'dotnet restore' on project creation.",
+      "defaultValue": "false"
+    }
+  },
+  "postActions": [
+    {
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "condition": "(!SkipRestore)",
+      "continueOnError": true,
+      "description": "Restore NuGet packages required by this project.",
+      "manualInstructions": [
+        {
+          "text": "Run 'dotnet restore' in the directory the template was created in."
+        }
+      ]
+    }
+  ]
+}
